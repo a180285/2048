@@ -52,24 +52,24 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var valueMap = {
-    2 :    '<Udacity>',
-    4 :    '<Intro CS>',
-    8 :    "skills=['code']",
-    16 :   "skills.add('CSS')",
-    32 :   '</Intro CS>',
-    64 :   '<Job search>',
-    128 :  'getJob(skills)',
-    256 :  '</Job search>',
-    512 :  'if Udacious:',
-    1024 : 'skills.increase()',
-    2048 : 'myJob.advance()',
-    4096 : 'myCareer=myJob'
+    2 :    'A',
+    4 :    'B',
+    8 :    "CMC",
+    16 :   "D",
+    32 :   'E',
+    64 :   'F',
+    128 :  'G',
+    256 :  'Hw',
+    512 :  'I',
+    1024 : 'J',
+    2048 : 'K',
+    4096 : 'L'
   }
   var self = this;
 
   var wrapper   = document.createElement("div");
   var inner     = document.createElement("div");
-  
+
   var position  = tile.previousPosition || { x: tile.x, y: tile.y };
   var positionClass = this.positionClass(position);
 
