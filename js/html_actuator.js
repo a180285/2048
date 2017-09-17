@@ -63,7 +63,7 @@ HTMLActuator.prototype.addTile = function (tile) {
     512 :  'O(√n)',
     1024 : 'O(log(n))',
     2048 : 'O(1)',
-    4096 : 'O(0)'
+    4096 : 'O(o.o)'
   }
   var self = this;
 
