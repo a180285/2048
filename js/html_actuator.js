@@ -52,18 +52,18 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var valueMap = {
-    2 :    'A',
-    4 :    'B',
-    8 :    "C",
-    16 :   "D",
-    32 :   'E',
-    64 :   'F',
-    128 :  'G',
-    256 :  'H',
-    512 :  'I',
-    1024 : 'J',
-    2048 : 'K',
-    4096 : 'L'
+    2 :    'O(n!)',
+    4 :    'O(n^3)',
+    8 :    "O(n^2 √n)",
+    16 :   "O(n^2 log(n))",
+    32 :   'O(n^2)',
+    64 :   'O(n √n)',
+    128 :  'O(n log(n))',
+    256 :  'O(n)',
+    512 :  'O(√n)',
+    1024 : 'O(log(n))',
+    2048 : 'O(1)',
+    4096 : 'O(0)'
   }
   var self = this;
 
