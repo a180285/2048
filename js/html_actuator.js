@@ -54,12 +54,12 @@ HTMLActuator.prototype.addTile = function (tile) {
   var valueMap = {
     2 :    'A',
     4 :    'B',
-    8 :    "CMC",
+    8 :    "C",
     16 :   "D",
     32 :   'E',
     64 :   'F',
     128 :  'G',
-    256 :  'Hw',
+    256 :  'H',
     512 :  'I',
     1024 : 'J',
     2048 : 'K',
@@ -81,7 +81,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  //inner.textContent = tile.value;
+  // inner.textContent = tile.value;
   inner.textContent = valueMap[tile.value];
 
   if (tile.previousPosition) {
